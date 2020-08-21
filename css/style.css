@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Baloo+Tamma+2:wght@500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0em;
+}
+
+body {
+  background: url(../BKG.jpg);
+}
+
+nav {
+  background: rgba(199, 243, 134, 0.877);
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav ul li {
+  padding: 45px 0;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 2.4em;
+}
+
+nav ul li.items {
+  width: auto;
+  margin: 0 1.5em;
+  text-align: center;
+  margin-right: 5em;
+}
+
+nav ul li.items::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+}
+
+nav ul li.logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: black;
+  font-weight: 600;
+  font-size: 3.5em;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-left: 3em;
+  font-family: 'Baloo Tamma 2', cursive;
+}
+
+h1 {
+  color: rgba(255, 255, 255, 0.87);
+  display: block;
+  font-size: 5.5em;
+  font-family: 'Acme', sans-serif;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  margin-top: 0.7em;
+  letter-spacing: 5px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.search-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 22px;
+}
+
+.search-box-input {
+  font-size: inherit;
+  border: 0.2em solid greenyellow;
+  border-radius: 0.5em 0 0 0.5em;
+  padding: 0.2em 0.5em;
+  outline: 0;
+  margin-top: 2.9em;
+  margin-left: auto;
+  width: 38%;
+}
+
+.search-box-input:hover {
+  border-color: greenyellow;
+}
+
+.search-box-input:focus {
+  border-color: green;
+}
+
+.search-box-button {
+  font-size: inherit;
+  border: 0.2em solid greenyellow;
+  border-radius: 0 0.5em 0.5em 0;
+  background-color: #aac96d;
+  border-left: 0;
+  margin-top: 2.9em;
+  margin-right: auto;
+  padding: 0.5em 0.75em;
+  color: greenyellow;
+  font-weight: bold;
+  outline: 0;
+  cursor: pointer;
+}
+
+.search-box-button:hover {
+  border-color: greenyellow;
+  background-color: greenyellow;
+}
+
+.search-box-button:focus {
+  border-color: greenyellow;
+  background-color: greenyellow;
+}
+
+h4 {
+  text-align: center;
+  margin-top: 5em;
+}
+
+h4 a {
+  color: white;
+  font-size: 27px;
+  word-spacing: 0.1em;
+}
+
+@media all and (max-width: 900px) {
+  nav {
+    padding: 5px 30px;
+  }
+  nav ul li.items {
+    width: 100%;
+  }
+  nav ul li.logo {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
