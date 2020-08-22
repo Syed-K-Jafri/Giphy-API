@@ -120,7 +120,12 @@ h4 {
 	a {
 		color: $ac;
 		font-size: 27px;
-		word-spacing: 0.1em;
+        word-spacing: 0.1em;
+        font-family: sans-serif;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
 	}
 }
 
