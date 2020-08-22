@@ -1,23 +1,31 @@
 
-$(document).ready(function(){
+$(document).ready(function () {
+    $("button").click(function(e) {
+        e.preventDefault();
+        var seeSaw = $('.search-box-input').val();
+        var resultElement =  $('#results')
 
+        
+        $.ajax({
+            url: "//api.giphy.com/v1/gifs/search?q=" + seeSaw + "&api_key=2Zf3ESzIA3eYUPPmqdLntqJOO4gfPVhS",
+            method: 'GET',
+            data: {q:seesaw},
+            dataType: 'json',
+            success: function(response) {
+                console.log(response.data);
+            }
+        });
     
-    var $input = $("#input");
-    var $submit = $("#submit");
+         
+     
     
-
-    $submit.on('click', function (event) {
-        event.preventDefault();
-        var inputVal = $input.val();
-        getGiphys(inputVal);
-
     });
 
-// Make a get request to the giphy api with the input value
+        
 
-function getGiphys() {
-    
-    
 
+
+    
 });
+
 
