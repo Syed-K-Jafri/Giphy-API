@@ -158,6 +158,8 @@ div .results {
   margin-left: auto;
   margin-right: auto;
   float: none;
+  height: 280px;
+  width: 350px;
 }
 
 @media all and (max-width: 900px) {
