@@ -1,25 +1,51 @@
+  $(document).ready(function(){
+        
+        $("button").click(function(){
 
-$("button").click(function() {
+            event.preventDefault();
+            let searchBox = $('#getter').val();
+            apiUrl = `https://api.giphy.com/v1/gifs/search?q=${searchBox}&api_key=i3eLWc366RmPZHe8Ff1rCrqWafjU1V7p&limit=10`
 
-    var myRequest = $.get("http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=i3eLWc366RmPZHe8Ff1rCrqWafjU1V7p&limit=15");
+            $.ajax({
+                url: apiUrl,
+                dataType: 'json',
+                type: 'GET',
+                cache: false,
+                success: function(data) {
+                    console.log('success', data);
 
-    myRequest.done(
-        function(data) { 
+                    if (searchBox === "") {
+                        alert(`Search Field is Empty.`);
+                    }
+                    
+                    for(var i = 0; i < data.data.length; i++) {
+                        var newImg = document.createElement("img");
+                            newImg.src = data.data[i].images.original.url;
+                    document.body.appendChild(newImg);
+
+
+                    }   
+
+
+                }
+
+                
+
+            });
+
+        });
+
+
+  });
+
+
     
-            //console.log("success got data", data); 
-            for(var i = 0; i < data.data.length; i++) {
-                var newImg = document.createElement("img");
-                    newImg.src = data.data[i].images.original.url;
-                document.body.appendChild(newImg);
-            }
-        }            
-    );
+
+
+
+
+  
     
-
-}) //click handler parens
-
-
-
 
 
 
