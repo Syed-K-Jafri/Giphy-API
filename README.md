@@ -8,6 +8,6 @@ Technologies used: HTML, CSS and Javascript (jQuery, Ajax)
 
 Three Ideas for future improvement
 
-    1. Implement flexbox container
+    1. Implement Grid
     2. Add  more interactivity
     3. Insert more technologies
