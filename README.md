@@ -2,7 +2,7 @@ Syed Jafri
 
 This  webpage  displays animated GIF's
 
-Users can enter in a ketword and retrieve GIF's relevant to that keyword
+Users can enter in a keyword and retrieve GIF's relevant to that keyword
 
 Technologies used: HTML, CSS and Javascript (jQuery, Ajax)
 
